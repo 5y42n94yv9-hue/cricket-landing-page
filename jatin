@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JATIN SPORTS ANALYST (CEO)</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 15px;
+  background:
+    linear-gradient(180deg, rgba(1,13,19,.72), #020a0e 100%),
+    radial-gradient(ellipse at 50% 10%, #176b51, #071820 70%);
+  overflow-x: hidden;
+}
+
+/* Stadium atmosphere */
+
+.stadium {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse at 10% 8%, #d9f9ff44, transparent 25%),
+    radial-gradient(ellipse at 90% 8%, #d9f9ff44, transparent 25%),
+    radial-gradient(ellipse at 50% 100%, #00a85a22, transparent 50%);
+}
+
+.card {
+  width: 100%;
+  max-width: 650px;
+  padding: 45px 32px;
+  text-align: center;
+  border: 1px solid #ffffff30;
+  border-radius: 30px;
+  background: linear-gradient(
+    145deg,
+    rgba(13,39,42,.96),
+    rgba(5,17,24,.97)
+  );
+  box-shadow: 0 0 50px #00d98b18;
+  position: relative;
+}
+
+.logo {
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: #8effc5;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 1.35;
+  font-weight: 900;
+  margin-bottom: 25px;
+  text-shadow: 0 0 18px #00d98b66;
+}
+
+.ceo {
+  color: #eaff00;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.tagline {
+  background: linear-gradient(90deg,#d9ed00,#faff55);
+  color: #07120b;
+  border-radius: 12px;
+  padding: 19px 12px;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  box-shadow: 0 0 22px #eaff0040;
+}
+
+.stadium-label {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #8ca8a0;
+  margin-bottom: 12px;
+}
+
+.timer {
+  font-size: 20px;
+  color: #c5d1d5;
+  margin-bottom: 30px;
+}
+
+#countdown {
+  color: #00ff9d;
+  font-weight: bold;
+}
+
+.join-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  text-decoration: none;
+  background: linear-gradient(180deg,#e13b0d,#8d1305);
+  color: white;
+  padding: 25px 15px;
+  border: 3px solid white;
+  border-radius: 27px;
+  font-size: 21px;
+  font-weight: 900;
+  box-shadow: 0 0 25px #ff3c1d55;
+  transition: .3s;
+}
+
+.join-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 35px #ff3c1d99;
+}
+
+.telegram-icon {
+  width: 42px;
+  height: 42px;
+  background: white;
+  color: #bd290c;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 23px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.feature {
+  background: #ffffff0c;
+  border: 1px solid #ffffff22;
+  padding: 10px 13px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #d8e8df;
+}
+
+.disclaimer {
+  border-top: 1px dashed #526d67;
+  margin-top: 35px;
+  padding-top: 28px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #91a6a2;
+}
+
+.credit {
+  margin-top: 28px;
+  font-size: 16px;
+  color: white;
+}
+
+.credit span {
+  color: #49a5ff;
+  font-weight: bold;
+}
+
+@media(max-width:480px) {
+  .card {
+    padding: 38px 20px;
+    border-radius: 25px;
+  }
+
+  h1 { font-size: 26px; }
+
+  .tagline { font-size: 16px; }
+
+  .join-btn { font-size: 17px; }
+
+  .timer { font-size: 17px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="stadium"></div>
+
+<div class="card">
+
+  <div class="logo">🏏 CRICKET ANALYSIS</div>
+
+  <h1>
+    JATIN SPORTS<br>
+    ANALYST
+    <div class="ceo">( CEO )</div>
+  </h1>
+
+  <div class="tagline">
+    Accurate Cricket Analysis • Match Updates • Expert Insights
+  </div>
+
+  <div class="stadium-label">
+    YOUR DAILY CRICKET UPDATE
+  </div>
+
+  <div class="timer">
+    NEXT UPDATE IN
+    <span id="countdown">30s</span>
+  </div>
+
+  <a class="join-btn"
+   href="https://t.me/+2R7pPvDKJDUwYWE1"
+   target="_blank"
+   rel="noopener noreferrer">
+
+    <span>JOIN TELEGRAM FOR NEW UPDATE</span>
+
+    <span class="telegram-icon">➤</span>
+
+  </a>
+
+  <div class="features">
+    <div class="feature">🏏 Match Analysis</div>
+    <div class="feature">📊 Cricket Updates</div>
+    <div class="feature">🏆 Match Reports</div>
+  </div>
+
+  <div class="disclaimer">
+    Disclaimer: This channel shares cricket news,
+    analysis and general information for fans.
+    It does not promote betting or gambling.
+    No match outcomes are guaranteed.
+    Please verify information independently
+    and act responsibly.
+  </div>
+
+  <div class="credit">
+    Ads by <span>Ayush Ads Agency</span>
+  </div>
+
+</div>
+
+<script>
+let seconds = 30;
+
+const countdown = document.getElementById("countdown");
+
+const interval = setInterval(function() {
+
+  seconds--;
+
+  if (seconds <= 0) {
+    clearInterval(interval);
+    countdown.textContent = "Update available";
+  } else {
+    countdown.textContent = seconds + "s";
+  }
+
+}, 1000);
+</script>
+
+</body>
+</html>        
